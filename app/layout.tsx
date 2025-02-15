@@ -1,15 +1,18 @@
 // app/layout.tsx
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import './globals.css'; // Global styles
+import '@/app/tailwind.css';
 import Navbar from '@/components/Navbar/Navbar';
 import Footer from '@/components/Footer/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Passave', // Change dynamically if needed
-  description: 'Your description here',
+  title: {
+    template: '%s | Passave',
+    default: 'Passave',
+  }, // Change dynamically if needed
+  description: 'Secure Password Manager',
   icons: {
     icon: [
       {
