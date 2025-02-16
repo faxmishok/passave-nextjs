@@ -31,31 +31,31 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className='hidden space-x-8 lg:flex'>
+        <ul className='hidden items-center space-x-8 lg:flex'>
           <NavItem href='/#product' label='Product' />
           <NavItem href='/#technologies' label='Technologies' />
           <NavItem href='/#about-us' label='About us' />
           <NavItem href='/#contact' label='Contact' />
-        </nav>
+        </ul>
 
         {/* Desktop Actions */}
-        <div className='hidden items-center space-x-8 lg:flex'>
+        <ul className='hidden items-center space-x-8 lg:flex'>
           <NavItem href='/sign-in' label='Sign in' />
           <Link
             href='/sign-up'
-            className='bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline inline-flex h-12 items-center justify-center rounded px-6 font-medium tracking-wide text-white shadow-md transition duration-200 focus:outline-none'
+            className='inline-flex h-12 items-center justify-center rounded bg-deep-purple-accent-400 px-6 font-medium tracking-wide text-white shadow-md transition duration-200 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none'
             aria-label='Sign up'
             title='Sign up'
           >
             Sign up
           </Link>
-        </div>
+        </ul>
 
         {/* Mobile Menu Button */}
         <button
           aria-label='Open Menu'
           title='Open Menu'
-          className='focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50 -mr-1 rounded p-2 transition duration-200 focus:outline-none lg:hidden'
+          className='-mr-1 rounded p-2 transition duration-200 hover:bg-deep-purple-50 focus:bg-deep-purple-50 focus:shadow-outline focus:outline-none lg:hidden'
           onClick={() => setIsMobileMenuOpen(true)}
         >
           <svg className='w-5 text-gray-600' viewBox='0 0 24 24'>
@@ -102,7 +102,7 @@ export default function Navbar() {
                 <button
                   aria-label='Close Menu'
                   title='Close Menu'
-                  className='focus:shadow-outline -mr-2 -mt-2 rounded p-2 transition duration-200 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none'
+                  className='-mr-2 -mt-2 rounded p-2 transition duration-200 hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline focus:outline-none'
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   <svg className='w-5 text-gray-600' viewBox='0 0 24 24'>
@@ -124,7 +124,7 @@ export default function Navbar() {
                   <li>
                     <Link
                       href='/sign-up'
-                      className='bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline inline-flex h-12 w-full items-center justify-center rounded px-6 font-medium tracking-wide text-white shadow-md transition duration-200 focus:outline-none'
+                      className='inline-flex h-12 w-full items-center justify-center rounded bg-deep-purple-accent-400 px-6 font-medium tracking-wide text-white shadow-md transition duration-200 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none'
                       aria-label='Sign up'
                       title='Sign up'
                     >

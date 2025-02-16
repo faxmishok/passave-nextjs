@@ -1,17 +1,15 @@
-// app/layout.tsx
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import '@/app/tailwind.css';
 import Navbar from '@/components/Navbar/Navbar';
 import Footer from '@/components/Footer/Footer';
-
-const inter = Inter({ subsets: ['latin'] });
+import { Suspense } from 'react';
+import Loading from './loading';
 
 export const metadata: Metadata = {
   title: {
     template: '%s | Passave',
     default: 'Passave',
-  }, // Change dynamically if needed
+  },
   description: 'Secure Password Manager',
   icons: {
     icon: [
@@ -48,12 +46,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <head>
-        <link rel='icon' href='/favicon-32x32.png' sizes='32x32' />
-      </head>
-      <body className={inter.className}>
+      <body>
         <Navbar />
-        <main>{children}</main>
+        <main>
+          <Suspense fallback={<Loading />}>{children}</Suspense>
+        </main>
         <Footer />
       </body>
     </html>

@@ -53,7 +53,7 @@ export default function Footer() {
               href='https://fahminguliyev.com'
               target='_blank'
               rel='noopener noreferrer'
-              className='text-deep-purple-accent-400 hover:text-deep-purple-800 transition-colors duration-300'
+              className='text-deep-purple-accent-400 transition-colors duration-300 hover:text-deep-purple-800'
             >
               fahminguliyev.com
             </a>
@@ -62,7 +62,7 @@ export default function Footer() {
             <p className='mr-1 text-gray-800'>Email:</p>
             <a
               href='mailto:forthisexercise@gmail.com'
-              className='text-deep-purple-accent-400 hover:text-deep-purple-800 transition-colors duration-300'
+              className='text-deep-purple-accent-400 transition-colors duration-300 hover:text-deep-purple-800'
             >
               forthisexercise@gmail.com
             </a>
@@ -73,7 +73,7 @@ export default function Footer() {
               href='https://www.google.com/maps/place/Baku,+Azerbaijan/'
               target='_blank'
               rel='noopener noreferrer'
-              className='text-deep-purple-accent-400 hover:text-deep-purple-800 transition-colors duration-300'
+              className='text-deep-purple-accent-400 transition-colors duration-300 hover:text-deep-purple-800'
             >
               Baku, Azerbaijan
             </a>
@@ -96,12 +96,12 @@ export default function Footer() {
       {/* Copyright and Links */}
       <div className='flex flex-col-reverse justify-between border-t pb-10 pt-5 lg:flex-row'>
         <p className='text-sm text-gray-600'>
-          © Copyright 2021-2025 |
+          © Copyright 2021-2025 |&nbsp;
           <a
             href='https://fahminguliyev.com'
             target='_blank'
             rel='noopener noreferrer'
-            className='hover:text-deep-purple-600 font-bold text-gray-600 transition-colors duration-300'
+            className='font-bold text-gray-600 transition-colors duration-300 hover:text-deep-purple-600'
           >
             Fahmin Guliyev
           </a>
@@ -111,7 +111,7 @@ export default function Footer() {
           <li>
             <Link
               href='/faq'
-              className='hover:text-deep-purple-accent-400 text-sm text-gray-600 transition-colors duration-300'
+              className='text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400'
             >
               F.A.Q
             </Link>
@@ -119,7 +119,7 @@ export default function Footer() {
           <li>
             <Link
               href='/terms'
-              className='hover:text-deep-purple-accent-400 text-sm text-gray-600 transition-colors duration-300'
+              className='text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400'
             >
               Privacy Policy
             </Link>
@@ -127,7 +127,7 @@ export default function Footer() {
           <li>
             <Link
               href='/terms'
-              className='hover:text-deep-purple-accent-400 text-sm text-gray-600 transition-colors duration-300'
+              className='text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400'
             >
               Terms & Conditions
             </Link>
