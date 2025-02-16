@@ -1,4 +1,4 @@
-const About = () => {
+const Product = () => {
   return (
     <section
       id='product'
@@ -24,4 +24,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Product;

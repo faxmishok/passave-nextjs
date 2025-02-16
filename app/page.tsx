@@ -1,12 +1,12 @@
-import { Hero, About, Technologies, Team } from '@/components/Homepage';
+import { Hero, Product, Technologies, AboutUs } from '@/components/Homepage';
 
 export default function Home() {
   return (
     <div>
       <Hero />
-      <About />
+      <Product />
       <Technologies />
-      <Team />
+      <AboutUs />
     </div>
   );
 }

@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { siteMetadata } from '@/constants/metadata';
 
-const Team = () => {
+const AboutUs = () => {
   return (
     <div
       id='about-us'
@@ -110,4 +110,4 @@ const Team = () => {
   );
 };
 
-export default Team;
+export default AboutUs;

@@ -11,9 +11,8 @@ export default function Hero() {
       <Image
         src='https://res.cloudinary.com/faxmishok/image/upload/v1623614771/yusif-purple.png'
         alt='Hero Background'
-        layout='fill'
-        objectFit='cover'
-        className='absolute inset-0'
+        fill
+        className='absolute inset-0 object-cover'
         priority
       />
       <div className='h-header relative bg-deep-purple-accent-700 bg-opacity-30'>
